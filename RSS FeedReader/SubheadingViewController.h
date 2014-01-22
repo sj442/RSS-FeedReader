@@ -10,4 +10,10 @@
 
 @interface SubheadingViewController : UITableViewController
 
+@property (strong, nonatomic) NSString *heading;
+
+@property (strong, nonatomic) NSDictionary *dictionary;
+
+@property (strong, nonatomic) NSMutableArray *feeditemsArray;
+
 @end

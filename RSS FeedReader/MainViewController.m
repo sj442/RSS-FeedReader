@@ -40,13 +40,6 @@
     self.headingsArray = @[@"Home", @"News", @"Opinion", @"Business", @"Sport", @"S&T"];
 }
 
--(void)nextButtonTapped:(id)sender{
-    
-    //SubheadingViewController *subheadingvc = [
-    
-    
-    //[self.navigationController pushViewController:<#(UIViewController *)#> animated:<#(BOOL)#>]
-}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -61,6 +54,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIStoryboard *storyboard  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    SubheadingViewController *subheadingvc = [storyboard instantiateViewControllerWithIdentifier:@"subHeading"];
+    
+    subheadingvc.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    
+    [self.navigationController pushViewController:subheadingvc animated:YES];
+    
+}
+
+
+
+
 
 
 
