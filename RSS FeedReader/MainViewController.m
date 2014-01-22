@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "SubheadingViewController.h"
 
 @interface MainViewController ()
 
@@ -20,7 +21,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -28,8 +28,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"The Hindu";
+    
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    
+    NSMutableDictionary *attributes = [[NSMutableDictionary alloc]init];
+    
+    [attributes setObject:[UIFont fontWithName:@"HoeflerText-Black" size:30] forKey:NSFontAttributeName];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:attributes];
+    
     self.headingsArray = @[@"Home", @"News", @"Opinion", @"Business", @"Sport", @"S&T"];
+}
+
+-(void)nextButtonTapped:(id)sender{
+    
+    //SubheadingViewController *subheadingvc = [
+    
+    
+    //[self.navigationController pushViewController:<#(UIViewController *)#> animated:<#(BOOL)#>]
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -40,18 +56,12 @@
     return [self.headingsArray count];
 }
 
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString *cellIdentifier = @"cell";
-    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = self.headingsArray[indexPath.row];
-    return cell;
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

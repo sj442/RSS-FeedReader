@@ -22,6 +22,8 @@
 		1647D910188FBC9B0083B45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1647D90E188FBC9B0083B45C /* InfoPlist.strings */; };
 		1647D912188FBC9B0083B45C /* RSS_FeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D911188FBC9B0083B45C /* RSS_FeedReaderTests.m */; };
 		1647D92B188FED190083B45C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D92A188FED190083B45C /* MainViewController.m */; };
+		1647D92D189031240083B45C /* nextbutton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1647D92C189031240083B45C /* nextbutton.jpg */; };
+		1647D930189033E60083B45C /* SubheadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D92F189033E60083B45C /* SubheadingViewController.m */; };
 		48EB7BC89F2D4D7E97186D0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B551FD55544998BB6D464 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,9 @@
 		1647D911188FBC9B0083B45C /* RSS_FeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_FeedReaderTests.m; sourceTree = "<group>"; };
 		1647D929188FED190083B45C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1647D92A188FED190083B45C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1647D92C189031240083B45C /* nextbutton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nextbutton.jpg; sourceTree = "<group>"; };
+		1647D92E189033E60083B45C /* SubheadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubheadingViewController.h; sourceTree = "<group>"; };
+		1647D92F189033E60083B45C /* SubheadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubheadingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +133,10 @@
 				1647D8FC188FBC9B0083B45C /* ViewController.m */,
 				1647D929188FED190083B45C /* MainViewController.h */,
 				1647D92A188FED190083B45C /* MainViewController.m */,
+				1647D92E189033E60083B45C /* SubheadingViewController.h */,
+				1647D92F189033E60083B45C /* SubheadingViewController.m */,
 				1647D8FE188FBC9B0083B45C /* Images.xcassets */,
+				1647D92C189031240083B45C /* nextbutton.jpg */,
 				1647D8ED188FBC9B0083B45C /* Supporting Files */,
 			);
 			path = "RSS FeedReader";
@@ -241,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1647D92D189031240083B45C /* nextbutton.jpg in Resources */,
 				1647D8FF188FBC9B0083B45C /* Images.xcassets in Resources */,
 				1647D8F1188FBC9B0083B45C /* InfoPlist.strings in Resources */,
 				1647D8FA188FBC9B0083B45C /* Main.storyboard in Resources */,
@@ -299,6 +308,7 @@
 				1647D8F7188FBC9B0083B45C /* AppDelegate.m in Sources */,
 				1647D8F3188FBC9B0083B45C /* main.m in Sources */,
 				1647D92B188FED190083B45C /* MainViewController.m in Sources */,
+				1647D930189033E60083B45C /* SubheadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
