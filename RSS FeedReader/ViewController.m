@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     
-    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.thehindu.com/?service=rss"]];
+    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.thehindu.com/news/?service=rss"]];
     [RSSParser parseRSSFeedForRequest:req success:^(NSArray *feedItems) {
         
         NSLog(@"got feed items %d", [feedItems count]);
@@ -28,14 +28,11 @@
         for (int i=0; i<[feedItems count]; i++){
             RSSItem *item = feedItems[i];
             NSLog(@"RSS Item %@", [item description]);
-            NSLog(@"RSS Item description %@", item.itemDescription);
+            NSLog(@"RSS Item description %@", item.pubDate);
         }
         
-        
     } failure:^(NSError *error) {
-        
-        //something went wrong
-        
+        NSLog(@"error %@", error);
     }];
 
 }
@@ -43,7 +40,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

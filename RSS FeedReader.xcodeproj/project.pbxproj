@@ -21,6 +21,7 @@
 		1647D908188FBC9B0083B45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1647D8EA188FBC9B0083B45C /* UIKit.framework */; };
 		1647D910188FBC9B0083B45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1647D90E188FBC9B0083B45C /* InfoPlist.strings */; };
 		1647D912188FBC9B0083B45C /* RSS_FeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D911188FBC9B0083B45C /* RSS_FeedReaderTests.m */; };
+		1647D92B188FED190083B45C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D92A188FED190083B45C /* MainViewController.m */; };
 		48EB7BC89F2D4D7E97186D0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B551FD55544998BB6D464 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		1647D90D188FBC9B0083B45C /* RSS FeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSS FeedReaderTests-Info.plist"; sourceTree = "<group>"; };
 		1647D90F188FBC9B0083B45C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1647D911188FBC9B0083B45C /* RSS_FeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_FeedReaderTests.m; sourceTree = "<group>"; };
+		1647D929188FED190083B45C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1647D92A188FED190083B45C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				1647D8F8188FBC9B0083B45C /* Main.storyboard */,
 				1647D8FB188FBC9B0083B45C /* ViewController.h */,
 				1647D8FC188FBC9B0083B45C /* ViewController.m */,
+				1647D929188FED190083B45C /* MainViewController.h */,
+				1647D92A188FED190083B45C /* MainViewController.m */,
 				1647D8FE188FBC9B0083B45C /* Images.xcassets */,
 				1647D8ED188FBC9B0083B45C /* Supporting Files */,
 			);
@@ -293,6 +298,7 @@
 				1647D8FD188FBC9B0083B45C /* ViewController.m in Sources */,
 				1647D8F7188FBC9B0083B45C /* AppDelegate.m in Sources */,
 				1647D8F3188FBC9B0083B45C /* main.m in Sources */,
+				1647D92B188FED190083B45C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
