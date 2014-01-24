@@ -25,6 +25,7 @@
 		1647D92D189031240083B45C /* nextbutton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1647D92C189031240083B45C /* nextbutton.jpg */; };
 		1647D930189033E60083B45C /* SubheadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1647D92F189033E60083B45C /* SubheadingViewController.m */; };
 		1649CFBD1892436200D90042 /* secondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1649CFBC1892436200D90042 /* secondLevelViewController.m */; };
+		1649CFC0189258D900D90042 /* thirdLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1649CFBF189258D900D90042 /* thirdLevelViewController.m */; };
 		48EB7BC89F2D4D7E97186D0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B551FD55544998BB6D464 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		1647D92F189033E60083B45C /* SubheadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubheadingViewController.m; sourceTree = "<group>"; };
 		1649CFBB1892436200D90042 /* secondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondLevelViewController.h; sourceTree = "<group>"; };
 		1649CFBC1892436200D90042 /* secondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondLevelViewController.m; sourceTree = "<group>"; };
+		1649CFBE189258D900D90042 /* thirdLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdLevelViewController.h; sourceTree = "<group>"; };
+		1649CFBF189258D900D90042 /* thirdLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdLevelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				1647D92F189033E60083B45C /* SubheadingViewController.m */,
 				1649CFBB1892436200D90042 /* secondLevelViewController.h */,
 				1649CFBC1892436200D90042 /* secondLevelViewController.m */,
+				1649CFBE189258D900D90042 /* thirdLevelViewController.h */,
+				1649CFBF189258D900D90042 /* thirdLevelViewController.m */,
 				1647D8FE188FBC9B0083B45C /* Images.xcassets */,
 				1647D92C189031240083B45C /* nextbutton.jpg */,
 				1647D8ED188FBC9B0083B45C /* Supporting Files */,
@@ -315,6 +320,7 @@
 				1649CFBD1892436200D90042 /* secondLevelViewController.m in Sources */,
 				1647D92B188FED190083B45C /* MainViewController.m in Sources */,
 				1647D930189033E60083B45C /* SubheadingViewController.m in Sources */,
+				1649CFC0189258D900D90042 /* thirdLevelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

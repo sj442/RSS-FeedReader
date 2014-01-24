@@ -7,6 +7,7 @@
 //
 
 #import "secondLevelViewController.h"
+#import "thirdLevelViewController.h"
 
 @interface secondLevelViewController ()
 
@@ -28,6 +29,8 @@
     [super viewDidLoad];
     
     //self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    
+    self.title = self.heading;
     
     self.opinionSubheadings = @[@"Blogs", @"Columns", @"Editorial"];
     self.businessSubheadings = @[@"Industry", @"Economy", @"Markets"];
@@ -70,14 +73,27 @@
     
     CGFloat rectHeight = self.view.frame.size.height - occupiedLength;
     
-    CGFloat yStartPoint = self.view.frame.size.height - rectHeight;
-    
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, occupiedLength, self.view.frame.size.width, rectHeight)];
     
     view.backgroundColor = [UIColor blueColor];
     
     [self.view addSubview:view];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIStoryboard *storyboard  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    thirdLevelViewController *thirdlevelVC = [storyboard instantiateViewControllerWithIdentifier:@"thirdLevel"];
+    
+    thirdlevelVC.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    
+    [self.navigationController pushViewController:thirdlevelVC animated:YES];
     
 }
+
+
+
+
 
 @end
