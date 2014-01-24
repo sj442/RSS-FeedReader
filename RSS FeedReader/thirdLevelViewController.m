@@ -36,6 +36,13 @@
 
 @property (strong, nonatomic) NSMutableArray *feeditemsArray;
 
+@property (strong, nonatomic) NSDictionary *opinion;
+@property (strong, nonatomic) NSDictionary *news;
+@property (strong, nonatomic) NSDictionary *business;
+@property (strong, nonatomic) NSDictionary *sport;
+@property (strong, nonatomic) NSDictionary *SnT;
+
+
 @end
 
 @implementation thirdLevelViewController
@@ -58,6 +65,12 @@
     
     self.objectsArray = @[self.newsArray, self.opinionArray, self.businessArray, self.sportsArray, self.SnTArray];
     
+    self.news = [[NSDictionary alloc]initWithObjects:self.newsArray forKeys:self.newsSubheadings];
+    self.opinion= [[NSDictionary alloc]initWithObjects:self.opinionArray forKeys:self.opinionSubheadings];
+    self.business = [[NSDictionary alloc]initWithObjects:self.businessArray forKeys:self.businessSubheadings];
+    self.sport = [[NSDictionary alloc]initWithObjects:self.sportsArray forKeys:self.sportSubheadings];
+    self.SnT = [[NSDictionary alloc]initWithObjects:self.SnTArray forKeys:self.SnTSubheadings];
+    
     self.opinionSubheadings = @[@"Blogs", @"Columns", @"Editorial"];
     self.businessSubheadings = @[@"Industry", @"Economy", @"Markets"];
     self.newsSubheadings = @[@"International", @"National", @"Cities"];
@@ -67,6 +80,7 @@
     self.keysArray = @[self.newsSubheadings, self.opinionSubheadings, self.businessSubheadings, self.sportSubheadings, self.SnTSubheadings];
 
     self.dictionary = [[NSDictionary alloc]initWithObjects:self.objectsArray forKeys:self.keysArray];
+    
     
     NSURL *url = [NSURL URLWithString:[self.dictionary objectForKey:self.heading]];
     

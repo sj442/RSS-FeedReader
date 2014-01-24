@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) NSString *heading;
 
+@property (strong, nonatomic) NSString *parentHeading;
+
 @end
 
 

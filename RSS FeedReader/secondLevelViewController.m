@@ -88,6 +88,8 @@
     
     thirdlevelVC.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
     
+    thirdlevelVC.parentHeading = self.heading;
+    
     [self.navigationController pushViewController:thirdlevelVC animated:YES];
     
 }
