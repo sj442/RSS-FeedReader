@@ -10,7 +10,6 @@
 
 @interface secondLevelViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *opinionSubheadings;
-
+@property (strong, nonatomic) NSString *heading;
 
 @end

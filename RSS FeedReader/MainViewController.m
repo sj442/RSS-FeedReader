@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "SubheadingViewController.h"
+#import "secondLevelViewController.h"
 
 @interface MainViewController ()
 
@@ -59,12 +60,11 @@
     
     UIStoryboard *storyboard  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    SubheadingViewController *subheadingvc = [storyboard instantiateViewControllerWithIdentifier:@"subHeading"];
+    secondLevelViewController *secondlevelVC = [storyboard instantiateViewControllerWithIdentifier:@"secondLevel"];
     
-    subheadingvc.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    secondlevelVC.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
     
-    [self.navigationController pushViewController:subheadingvc animated:YES];
-    
+    [self.navigationController pushViewController:secondlevelVC animated:YES];
 }
 
 

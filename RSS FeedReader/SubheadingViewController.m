@@ -7,6 +7,7 @@
 //
 
 #import "SubheadingViewController.h"
+#import "secondLevelViewController.h"
 #import <RSSParser.h>
 #import <RSSItem.h>
 
@@ -63,6 +64,18 @@
     cell.textLabel.text = ((RSSItem*)self.feeditemsArray[indexPath.row]).title;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIStoryboard *storyboard  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    secondLevelViewController *secondlevelVC = [storyboard instantiateViewControllerWithIdentifier:@"secondLevel"];
+    
+    secondlevelVC.heading = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    
+    [self.navigationController pushViewController:secondlevelVC animated:YES];
+    
 }
 
 @end
