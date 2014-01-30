@@ -12,4 +12,20 @@
 
 +(DataStore*)sharedDataStore;
 
+@property (strong, nonatomic) NSArray *mainHeadings;
+@property (strong, nonatomic) NSArray *mainHeadingsURL;
+
+@property (strong, nonatomic) NSArray *opinionSubheadings;
+@property (strong, nonatomic) NSArray *businessSubheadings;
+@property (strong, nonatomic) NSArray *newsSubheadings;
+@property (strong, nonatomic) NSArray *SnTSubheadings;
+@property (strong, nonatomic) NSArray *sportSubheadings;
+
+@property (strong, nonatomic) NSArray *opinionSubheadingsURL;
+@property (strong, nonatomic) NSArray *sportSubheadingsURL;
+@property (strong, nonatomic) NSArray *businessSubheadingsURL;
+@property (strong, nonatomic) NSArray *newsSubheadingsURL;
+@property (strong, nonatomic) NSArray *SnTSubheadingsURL;
+
+
 @end
